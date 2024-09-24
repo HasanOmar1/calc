@@ -1,0 +1,89 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #451517,
+    #09152a,
+    #293243,
+    #133524,
+    #1c676d
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 60px;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: yellowgreen;
+}
+
+form {
+  border: 3px solid gray;
+  border-radius: 10px;
+  outline: 2px solid darkgray;
+  padding: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #484225,
+    #525931,
+    #567243,
+    #528b5d,
+    #40a67f
+  );
+}
+
+label {
+  font-size: 2.3rem;
+  color: goldenrod;
+}
+
+.email-form {
+  padding-bottom: 1rem;
+}
+
+.textarea-form {
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 5px;
+  opacity: 0.7;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 3px solid orangered;
+}
+.submit-btn {
+  margin-left: 40%;
+  margin-top: 6%;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.15);
+  background-color: seagreen;
+  outline: 2px solid darkred;
+}

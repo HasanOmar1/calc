@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #1f345c,
+    #09152a,
+    #293243,
+    #133524,
+    #323d1a
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.container h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: yellowgreen;
+  text-decoration: underline;
+}
+
+.container p {
+  font-size: 1.6rem;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  width: 700px;
+}
+
+.info {
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.3;
+}
+
+.go-to {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.go-to a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-left: 10px;
+  background-color: darkcyan;
+  color: gold;
+  border: none;
+}
+
+.go-to a:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.operators {
+  color: lightgreen;
+}
+
+.info .note-title {
+  color: lightseagreen;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  padding: 15px 0;
+}
+
+.info .range {
+  color: rgb(97, 209, 203);
+}
+
+.info .note {
+  font-size: 0.9rem;
+  color: lightsalmon;
+}

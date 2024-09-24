@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/calc.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Calculator</h1>
+      <ul>
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./selectCalc.html">Calculator</a>
+        <a href="./contact.html">Contact Me</a>
+      </ul>
+    </nav>
+
+    <div class="titles-container">
+      <h1>Multiplication Calculator</h1>
+      <h2>Calculate Numbers between 0 to 12</h2>
+    </div>
+
+    <div class="form-container">
+      <div class="btns-container">
+        <button class="random-1">Random Number</button>
+        <button class="random-2">Random Number</button>
+      </div>
+      <form>
+        <input
+          type="number"
+          id="num1"
+          class="numberInput"
+          min="0"
+          max="12"
+          required
+        />
+        <img src="../numbers/x.jpg" alt="Multiply operator" />
+        <input type="number" id="num2" min="0" max="12" required />
+        <input type="submit" value="Calculate" id="calculate-btn" />
+      </form>
+    </div>
+
+    <div class="imgs-container"></div>
+
+    <div class="exams-container">
+      <h2>Click here when you are ready to do the exam!</h2>
+      <a href="./multiplyExam.html">Multiplication Exam</a>
+    </div>
+
+    <script src="../javaScript/multiplyCalc.js"></script>
+  </body>
+</html>

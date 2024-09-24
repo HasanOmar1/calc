@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    to right top,
+    #0e131c,
+    #051f28,
+    #002b2b,
+    #133524,
+    #323d1a
+  );
+}
+
+#title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.exam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  border: 3px solid gray;
+  width: 1050px;
+  padding: 35px 0;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.correct {
+  color: greenyellow;
+}
+
+input {
+  font-size: 2rem;
+  padding: 10px;
+  width: 200px;
+  border: none;
+}
+
+input[type="number"]:disabled {
+  color: lightcoral;
+}
+
+input[type="number"]:focus {
+  outline: 5px solid darkgoldenrod;
+}
+
+p {
+  width: 70px;
+}
+
+#submit-btn,
+#new-exam {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#submit-btn:hover,
+#new-exam:hover {
+  transform: scale(1.15);
+  background-color: seagreen;
+  outline: 2px solid darkred;
+}
+
+.submit-msg {
+  width: fit-content;
+  font-size: 2rem;
+  color: lightgreen;
+}
+
+#new-exam {
+  margin-left: 50px;
+  border: none;
+}
+
+.btns-container {
+  margin-top: -30px;
+}
+
+.correct-answer {
+  color: greenyellow;
+  font-size: 1.3rem;
+  width: fit-content;
+  position: absolute;
+  padding: 0 10px;
+  top: -28px;
+  right: 50px;
+}
+
+.wrong-border {
+  border: 3px solid darkred;
+}
