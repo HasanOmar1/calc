@@ -10,7 +10,14 @@ let result1 = document.querySelector("#result-num-1");
 let emoji1 = document.querySelector("#emoji-1");
 let correctAnswer1 = document.querySelector(".correct-answer-1");
 firstNum1.innerText = 12 + parseInt(Math.ceil(Math.random() * 122));
-secondNum1.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+while (parseInt(firstNum1.innerText) % parseInt(secondNum1.innerText) !== 0) {
+  secondNum1.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+  if (parseInt(secondNum1.innerText) === 1) {
+    secondNum1.innerText = parseInt(Math.ceil(Math.random() * 12));
+  }
+}
 
 // 2
 let firstNum2 = document.querySelector("#first-num-2");
@@ -19,7 +26,14 @@ let result2 = document.querySelector("#result-num-2");
 let emoji2 = document.querySelector("#emoji-2");
 let correctAnswer2 = document.querySelector(".correct-answer-2");
 firstNum2.innerText = 12 + parseInt(Math.ceil(Math.random() * 122));
-secondNum2.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+while (parseInt(firstNum2.innerText) % parseInt(secondNum2.innerText) !== 0) {
+  secondNum2.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+  if (parseInt(secondNum2.innerText) === 1) {
+    secondNum2.innerText = parseInt(Math.ceil(Math.random() * 12));
+  }
+}
 
 // 3
 let firstNum3 = document.querySelector("#first-num-3");
@@ -28,7 +42,14 @@ let result3 = document.querySelector("#result-num-3");
 let emoji3 = document.querySelector("#emoji-3");
 let correctAnswer3 = document.querySelector(".correct-answer-3");
 firstNum3.innerText = 12 + parseInt(Math.ceil(Math.random() * 122));
-secondNum3.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+while (parseInt(firstNum3.innerText) % parseInt(secondNum3.innerText) !== 0) {
+  secondNum3.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+  if (parseInt(secondNum3.innerText) === 1) {
+    secondNum3.innerText = parseInt(Math.ceil(Math.random() * 12));
+  }
+}
 
 // 4
 let firstNum4 = document.querySelector("#first-num-4");
@@ -37,7 +58,14 @@ let result4 = document.querySelector("#result-num-4");
 let emoji4 = document.querySelector("#emoji-4");
 let correctAnswer4 = document.querySelector(".correct-answer-4");
 firstNum4.innerText = 12 + parseInt(Math.ceil(Math.random() * 122));
-secondNum4.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+while (parseInt(firstNum4.innerText) % parseInt(secondNum4.innerText) !== 0) {
+  secondNum4.innerText = parseInt(Math.ceil(Math.random() * 12));
+
+  if (parseInt(secondNum4.innerText) === 1) {
+    secondNum4.innerText = parseInt(Math.ceil(Math.random() * 12));
+  }
+}
 
 let numberOfCorrectAnswers = 0;
 
