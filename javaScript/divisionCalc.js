@@ -61,7 +61,7 @@ function handleSubmit(e) {
 
   result = divide(firstInputValue, secondInputValue);
   if (result % 1 !== 0) {
-    result = result.toFixed(3);
+    result = result.toFixed(2);
   }
 
   let num1String = firstInputValue.toString().split("");
