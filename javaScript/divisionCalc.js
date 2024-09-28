@@ -8,11 +8,32 @@ const randomInput2 = document.querySelector(".random-2");
 randomInput1.addEventListener("click", () => {
   let randomNumbers = 12 + Math.ceil(Math.random() * 122);
   firstInput.value = randomNumbers;
+
+  if (secondInput.value.length !== 0) {
+    while (parseInt(firstInput.value) % parseInt(secondInput.value) !== 0) {
+      firstInput.value = parseInt(Math.ceil(Math.random() * 144));
+
+      if (parseInt(firstInput.value) === 1) {
+        firstInput.value = parseInt(Math.ceil(Math.random() * 144));
+      }
+    }
+  }
 });
 
 randomInput2.addEventListener("click", () => {
   let randomNumbers = Math.ceil(Math.random() * 12);
   secondInput.value = randomNumbers;
+
+  //
+  if (firstInput.value.length !== 0) {
+    while (parseInt(firstInput.value) % parseInt(secondInput.value) !== 0) {
+      secondInput.value = parseInt(Math.ceil(Math.random() * 144));
+
+      if (parseInt(secondInput.value) === 1) {
+        secondInput.value = parseInt(Math.ceil(Math.random() * 144));
+      }
+    }
+  }
 });
 
 function divide(num1, num2) {
