@@ -24,7 +24,6 @@ randomInput2.addEventListener("click", () => {
   let randomNumbers = Math.ceil(Math.random() * 12);
   secondInput.value = randomNumbers;
 
-  //
   if (firstInput.value.length !== 0) {
     while (parseInt(firstInput.value) % parseInt(secondInput.value) !== 0) {
       secondInput.value = parseInt(Math.ceil(Math.random() * 144));
@@ -60,7 +59,10 @@ function handleSubmit(e) {
   const secondInputValue = parseInt(secondInput.value);
   let result;
 
-  result = Math.round(divide(firstInputValue, secondInputValue));
+  result = divide(firstInputValue, secondInputValue);
+  if (result % 1 !== 0) {
+    result = result.toFixed(3);
+  }
 
   let num1String = firstInputValue.toString().split("");
   let num2String = secondInputValue.toString().split("");
@@ -105,6 +107,13 @@ function handleSubmit(e) {
   equalImg.alt = "equal";
 
   for (let i = 0; i < resultToString.length; i++) {
+    if (resultToString[i] === ".") {
+      const imgElement = document.createElement("img");
+      imgsContainer.append(imgElement);
+      imgElement.src = `../numbers/dot.jpg`;
+      imgElement.alt = "dot";
+      imgElement.classList.add("dot");
+    }
     appendImg(resultToString, i, "0");
     appendImg(resultToString, i, "1");
     appendImg(resultToString, i, "2");
@@ -116,6 +125,7 @@ function handleSubmit(e) {
     appendImg(resultToString, i, "8");
     appendImg(resultToString, i, "9");
   }
+  console.log(resultToString);
 
   firstInput.value = "";
   secondInput.value = "";
