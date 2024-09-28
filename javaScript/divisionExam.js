@@ -70,9 +70,9 @@ while (parseInt(firstNum4.innerText) % parseInt(secondNum4.innerText) !== 0) {
 let numberOfCorrectAnswers = 0;
 
 function ifStatementFunction(num1, num2, result, emoji, correctAnswer) {
-  let sum = Math.round(parseInt(num1.innerText) / parseInt(num2.innerText));
+  let sum = parseInt(num1.innerText) / parseInt(num2.innerText);
 
-  if (sum === Math.round(parseFloat(result.value))) {
+  if (sum === parseInt(result.value)) {
     emoji.innerText = "✔";
     emoji.classList.add("correct");
     numberOfCorrectAnswers++;
